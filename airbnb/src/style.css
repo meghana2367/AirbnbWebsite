@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -18,18 +19,29 @@ body {
     box-shadow: 0 3px 7.4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+.gray {
+    color: #918E9B;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 #main {
     display: flex;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;
-    padding: 20px;
+    padding: 40px;
 }
 
 #main--photo {
     display: flex;
     justify-content: center;
     align-self: center;
-    width: 500px;
+    width: 700px;
+}
+
+section {
+    padding: 20px;
 }
 
 #main--header {
@@ -40,3 +52,51 @@ body {
 #main--des {
     margin-top: 0px;
 }
+
+.card {
+    width: 175px;
+    font-size: 12px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card--image {
+    width: 175px;
+    height: 233.66px;
+    border-radius: 9px;
+    margin-bottom: 9px;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+}
+
+.card--title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card--star {
+    height: 14px;
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.card--badge {
+    position: absolute;
+    top: 6px;
+    background-color: white;
+    left: 6px;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
